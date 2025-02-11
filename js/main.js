@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const doctors = [
-      { name: "Dr. Juan Pérez", specialty: "Odontologo", image: "assets/img/doctores/doctors-1.jpg" },
-      { name: "Dra. María López", specialty: "Odontologo", image: "assets/img/doctores/doctors-2.jpg" },
-      { name: "Dr. Juan Pérez", specialty: "Odontologo", image: "assets/img/doctores/doctors-1.jpg" },
-      { name: "Dra. María López", specialty: "Odontologo", image: "assets/img/doctores/doctors-2.jpg" },
-      { name: "Dr. Juan Pérez", specialty: "Odontologo", image: "assets/img/doctores/doctors-1.jpg" },
-      { name: "Dra. María López", specialty: "Odontologo", image: "assets/img/doctores/doctors-2.jpg" },
-      { name: "Dr. Carlos Rodríguez", specialty: "Odontologo", image: "assets/img/doctores/doctors-3.jpg" },
+      { name: "Dr. Juan Pérez", specialty: "Odontologo", image: "assets/img/doctores/doctors-1.jpg", location: "Sede Central" },
+      { name: "Dra. María López", specialty: "Odontologo", image: "assets/img/doctores/doctors-2.jpg", location: "Sede Central" },
+      { name: "Dr. Juan Pérez", specialty: "Odontologo", image: "assets/img/doctores/doctors-1.jpg", location: "Sede Central" },
+      { name: "Dra. María López", specialty: "Odontologo", image: "assets/img/doctores/doctors-2.jpg", location: "Sede Central" },
+      { name: "Dr. Juan Pérez", specialty: "Odontologo", image: "assets/img/doctores/doctors-1.jpg", location: "Sede Central" },
+      { name: "Dra. María López", specialty: "Odontologo", image: "assets/img/doctores/doctors-2.jpg", location: "Sede Central" },
+      { name: "Dr. Carlos Rodríguez", specialty: "Odontologo", image: "assets/img/doctores/doctors-3.jpg", location: "Sede Central" },
     ];
   
     const doctorsContainer = document.getElementById("doctors-container");
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="${doctor.image}" alt="${doctor.name}">
         <h3>${doctor.name}</h3>
         <p>${doctor.specialty}</p>
+        <p>${doctor.location}</p>
       `;
       doctorsContainer.appendChild(doctorCard);
     });

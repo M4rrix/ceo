@@ -28,6 +28,7 @@
           <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
           <li class="nav-item"><a class="nav-link" href="#doctors">Profesionales</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Sedes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
         </ul>
       </nav>
     </div>
@@ -43,7 +44,7 @@
     </div>
   </section>
 
-  <main class="container mt-5">
+  <section class="container mt-5">
     <!-- Sección Sobre Nosotros -->
     <section id="about" class="py-5" data-aos="fade-up">
       <div class="container">
@@ -132,11 +133,53 @@
       </div>
     </div>
   </section>
+   
+  <!-- Sección de Testimonios -->
+  <section id="testimonials" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="section-title">Testimonios</h2>
+      <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="testimonial-list">
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="Testimonio 1">
+              <p class="testimonial-text">"Excelente atención y servicio. Los profesionales son muy atentos y dedicados."</p>
+              <h4 class="testimonial-name">- Juan Pérez</h4>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario para agregar testimonios -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h3>Comparte tu experiencia</h3>
+      <form id="testimonial-form">
+        <div class="mb-3">
+          <input type="text" id="testimonial-name" class="form-control" placeholder="Tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <textarea id="testimonial-text" class="form-control" placeholder="Tu testimonio" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Testimonio</button>
+      </form>
+    </div>
+  </section>
+
   </main>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
- 
+  <script src="js/testimonios.js"></script>
   <script src="js/main.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   
