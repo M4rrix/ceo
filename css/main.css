@@ -258,7 +258,30 @@ body {
     background: #f8f9fa;
     padding: 60px 0;
   }
-  
+
+  #contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuye equitativamente en escritorio */
+    
+}
+
+.contact-card {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px; /* Ajusta la altura mínima para uniformidad */
+  width: 100%; /* Ocupará todo el ancho en móviles */
+  max-width: 250px; /* Ajustar tamaño en pantallas grandes */
+  margin: 10px;
+  cursor: pointer;
+}
+/*
   .contact-card {
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -268,9 +291,9 @@ body {
     transition: 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye el contenido uniformemente */
+    justify-content: space-between; /* Distribuye el contenido uniformemente 
     height: 100%;
-  }
+  } */
   
   .contact-card:hover {
     transform: translateY(-5px);
@@ -285,10 +308,22 @@ body {
   .contact-card p {
     font-size: 16px;
     color: #666;
-    margin-bottom: 15px;
+   /* margin-bottom: 15px; */
     flex-grow: 1; /* Permite que el texto expanda y equilibre la altura */
   }
   
+
+  .whatsapp-btn {
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%; /* Para ocupar todo el ancho del botón */
+    text-align: center;
+}
+  /*
   .whatsapp-btn {
     background: #25D366;
     color: white;
@@ -297,8 +332,8 @@ body {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    margin-top: auto; /* Empuja el botón hacia la parte inferior */
-  }
+    margin-top: auto; /* Empuja el botón hacia la parte inferior 
+  } */
   
   /* Asegura que todas las columnas sean del mismo tamaño */
 .row.justify-content-center > div {
@@ -306,57 +341,101 @@ body {
   align-items: stretch;
 }
 
-/* Sección de Testimonios */
-.form-control {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
+* 🔥 Mejoras en el diseño del carrusel de testimonios */
 
 #testimonials {
-  background: #f8f9fa;
-  padding: 60px 0;
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+#testimonial-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .testimonial-card {
-  background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 30px;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .testimonial-text {
-  font-size: 16px;
-  font-style: italic;
-  color: #666;
-  margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .testimonial-name {
-  font-size: 18px;
-  font-weight: bold;
-  color: #3fbbc0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3fbbc0;
 }
 
-.carousel-control-prev-icon,
+.form-control {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon, 
 .carousel-control-next-icon {
-  background-color: #3fbbc0;
-  border-radius: 50%;
-  padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
 }
 
+.div-h3 {
+  font-style: italic;
+}
 
   /*Media Querys*/
+
+  @media (max-width: 768px) {
+    #contact .row {
+      flex-direction: column; /* Cambia a una sola columna */
+      align-items: center; /* Centra las tarjetas */
+  }
+  .contact-card {
+    max-width: 350px; /* Un poco más grande en móviles */
+    width: 90%; /* Para evitar que ocupen todo el ancho */
+    margin: 10px auto; /* Centrar completamente */
+}
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 16px;
+    }
+    
+    .testimonial-name {
+        font-size: 18px;
+    }
+}
 
   @media (max-width: 992px) {
     #menu-toggle {

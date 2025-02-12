@@ -99,35 +99,39 @@
       <!--<h2>Contacto</h2>-->
       <div class="row justify-content-center">
         <div class="col-md-3">
-          <div class="contact-card">
-            <h3>Sede Central</h3>
-            <p>Av. Principal 123, Ciudad</p>
-            <p>Tel: +54 9 1234 5678</p>
-            <a href="https://wa.me/54912345678" class="whatsapp-btn">WhatsApp</a>
+          <a href="sedecentral.html" class="contact-card-link">
+            <div class="contact-card">
+              <h3>Sede Central</h3> </a>
+              <p>Av. Principal 123, Ciudad</p>
+              <p>Tel: +54 9 1234 5678</p>
+              <a href="https://wa.me/54998765432" class="whatsapp-btn">WhatsApp</a>
+            </div>
+          </div>
+        <div class="col-md-3">
+          <a href="sedenorte.html" class="contact-card-link">
+            <div class="contact-card">
+              <h3>Sede Norte</h3> </a>
+              <p>Calle Secundaria 456, Ciudad</p>
+              <p>Tel: +54 9 9876 5432</p>
+              <a href="https://wa.me/54998765432" class="whatsapp-btn">WhatsApp</a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="contact-card">
-            <h3>Sede Norte</h3>
-            <p>Calle Secundaria 456, Ciudad</p>
-            <p>Tel: +54 9 9876 5432</p>
-            <a href="https://wa.me/54998765432" class="whatsapp-btn">WhatsApp</a>
+          <a href="sedesur.html" class="contact-card-link">
+            <div class="contact-card">
+              <h3>Sede Sur</h3> </a>
+              <p>Avenida Sur 789, Ciudad</p>
+              <p>Tel: +54 9 1122 3344</p>
+              <a href="https://wa.me/54911223344" class="whatsapp-btn">WhatsApp</a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="contact-card">
-            <h3>Sede Sur</h3>
-            <p>Avenida Sur 789, Ciudad</p>
-            <p>Tel: +54 9 1122 3344</p>
-            <a href="https://wa.me/54911223344" class="whatsapp-btn">WhatsApp</a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="contact-card">
-            <h3>Sede Oeste</h3>
-            <p>Boulevard Oeste 101, Ciudad</p>
-            <p>Tel: +54 9 5566 7788</p>
-            <a href="https://wa.me/54955667788" class="whatsapp-btn">WhatsApp</a>
+          <a href="sedeoeste.html" class="contact-card-link">
+            <div class="contact-card">
+              <h3>Sede Oeste</h3> </a>
+              <p>Boulevard Oeste 101, Ciudad</p>
+              <p>Tel: +54 9 5566 7788</p>
+              <a href="https://wa.me/54955667788" class="whatsapp-btn">WhatsApp</a>
           </div>
         </div>
       </div>
@@ -142,7 +146,6 @@
         <div class="carousel-inner" id="testimonial-list">
           <div class="carousel-item active">
             <div class="testimonial-card">
-              <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="Testimonio 1">
               <p class="testimonial-text">"Excelente atención y servicio. Los profesionales son muy atentos y dedicados."</p>
               <h4 class="testimonial-name">- Juan Pérez</h4>
             </div>
@@ -161,7 +164,7 @@
   <!-- Formulario para agregar testimonios -->
   <section class="py-5">
     <div class="container text-center">
-      <h3>Comparte tu experiencia</h3>
+      <h3 class="div-h3">Comparte tu experiencia</h3>
       <form id="testimonial-form">
         <div class="mb-3">
           <input type="text" id="testimonial-name" class="form-control" placeholder="Tu nombre" required>
@@ -177,6 +180,12 @@
   </main>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script> <!-- Agregado -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+  
   <script src="js/testimonios.js"></script>
   <script src="js/main.js"></script>
   
