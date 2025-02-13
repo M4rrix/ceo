@@ -17,10 +17,10 @@
   <header id="header" class="bg-light p-3 fixed-top">
     <div class="container d-flex justify-content-between align-items-center">
       <h1 class="m-0">CEO</h1>
-      <button class="navbar-toggler d-lg-none" type="button" id="menu-toggle">
+      <button class="navbar-toggler d-lg-none" type="button" id="menu-toggle" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <nav id="navbar" class="nav-menu d-none d-lg-flex">
+      <nav id="navbar" class="nav-menu d-lg-flex">
         <button id="close-menu">✖</button>
         <ul class="nav flex-column flex-lg-row">
           <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
@@ -44,7 +44,7 @@
     </div>
   </section>
 
-  <section class="container mt-5">
+  <section class="container">
     <!-- Sección Sobre Nosotros -->
     <section id="about" class="py-5" data-aos="fade-up">
       <div class="container">
@@ -172,7 +172,7 @@
         <div class="mb-3">
           <textarea id="testimonial-text" class="form-control" placeholder="Tu testimonio" rows="3" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar Testimonio</button>
+        <button type="submit" class="btn btn-primary">Enviar Experiencia</button>
       </form>
     </div>
   </section>
@@ -184,12 +184,14 @@
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script> <!-- Agregado -->
 <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
-
-  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="menu.js"></script>
   <script src="js/testimonios.js"></script>
-  <script src="js/main.js"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+ 
+  
+ 
 
   
   
