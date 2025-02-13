@@ -423,13 +423,13 @@ body {
     
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #menu-toggle {
       display: none !important;
   }
 }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     #menu-toggle {
       display: flex;
     }
@@ -451,7 +451,7 @@ body {
     }
   }
 
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     #navbar {
       position: static;
       display: flex;
@@ -466,7 +466,7 @@ body {
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     #close-menu {
       display: block;
     }
