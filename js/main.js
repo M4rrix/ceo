@@ -36,18 +36,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   
-  // Animación de desplazamiento suave en el menú
-  document.querySelectorAll("a[href^='#']").forEach(anchor => {
-      anchor.addEventListener("click", function (event) {
-          event.preventDefault();
-          const targetId = this.getAttribute("href").substring(1);
-          const targetElement = document.getElementById(targetId);
-          if (targetElement) {
-              window.scrollTo({
-                  top: targetElement.offsetTop - 70, // Ajuste por el header fijo
-                  behavior: "smooth"
-              });
-          }
-      });
-  });
+  
 });
