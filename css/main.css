@@ -161,12 +161,68 @@ body {
   
   /* Secciones generales */
   
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
   section h2 {
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
     font-weight: bold;
+    color: #3fbbc0;
   }
+
+  /*About*/
+
+  /* Estilos para la sección Sobre Nosotros */
+#about {
+  background: #f8f9fa; /* Fondo suave */
+  padding: 60px 20px; /* Espaciado interno */
+  text-align: center;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Imagen */
+#about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados para una apariencia más elegante */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Títulos */
+#about h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3fbbc0; /* Color destacado */
+  margin-bottom: 15px;
+}
+
+#about h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Texto */
+#about p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Efecto en los textos */
+#about p, #about h3 {
+  transition: transform 0.3s ease-in-out;
+}
+
+#about p:hover, #about h3:hover {
+  transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}
   
   /* Servicios */
   #services .row {
@@ -188,6 +244,24 @@ body {
     color: #3fbbc0;
     font-weight: bold;
   }
+
+
+  /* Estilo para la imagen del título */
+.services-icon {
+  width: 80px; /* Tamaño de la imagen */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo para las imágenes de cada servicio */
+.service-img {
+  width: 100px; /* Ajustar tamaño */
+  margin-bottom: 10px; /* Espacio antes del título */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 
 /* Sección Doctores */
@@ -326,7 +400,7 @@ body {
   align-items: stretch;
 }
 
-* 🔥 Mejoras en el diseño del carrusel de testimonios */
+/* 🔥 Mejoras en el diseño del carrusel de testimonios */
 
 #testimonials {
     background: #f8f9fa;
@@ -364,10 +438,12 @@ body {
 }
 
 .testimonial-text {
-    font-size: 18px;
-    color: #555;
-    font-style: italic;
-    margin-bottom: 10px;
+  font-size: 20px; /* Ajustar tamaño del texto */
+  color: #555; /* Color de texto */
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 
 .testimonial-name {
@@ -395,6 +471,24 @@ body {
 
 .div-h3 {
   font-style: italic;
+}
+
+/* Comilla de apertura */
+.testimonial-text::before {
+  content: "“"; /* Comilla de apertura */
+  font-size: 30px; /* Tamaño grande */
+  color: #3fbbc0; /* Color turquesa */
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Comilla de cierre */
+.testimonial-text::after {
+  content: "”"; /* Comilla de cierre */
+  font-size: 30px;
+  color: #3fbbc0;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
   /*Media Querys*/
